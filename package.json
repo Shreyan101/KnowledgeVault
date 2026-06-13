@@ -1,0 +1,39 @@
+{
+  "name": "knowledgevault",
+  "version": "1.0.0",
+  "description": "**KnowledgeVault** is a secure AI-powered knowledge assistant that helps organizations interact with their internal documents through natural language. Using RAG, LangChain, embeddings, Pinecone, and AI agents, it delivers accurate, context-aware answers from company data while keeping sensitive information private and secure.",
+  "homepage": "https://github.com/Shreyan101/KnowledgeVault#readme",
+  "bugs": {
+    "url": "https://github.com/Shreyan101/KnowledgeVault/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shreyan101/KnowledgeVault.git"
+  },
+  "license": "ISC",
+  "author": "shreyan kashyap",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env src/index.js",
+    "dev": "nodemon --exec \"node --env-file=.env\" src/index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.1.49",
+    "@langchain/google-genai": "^2.1.31",
+    "@langchain/pinecone": "^1.0.3",
+    "@langchain/textsplitters": "^1.0.1",
+    "@pinecone-database/pinecone": "^5.1.2",
+    "langchain": "^1.4.5",
+    "nodemon": "^3.1.14",
+    "pdf-parse": "^2.4.5",
+    "@tavily/core": "^0.7.5",
+    "groq-sdk": "^1.2.1",
+    "node-cache": "^5.1.2",
+    "openai": "^6.42.0",
+    "zod": "^4.4.3"
+  }
+}
